@@ -1,3 +1,4 @@
+//create new objects
 var ballA = new Ball(100,100, 4);
 var ballB = new Ball(200,100, 5);
 var ballC = new Ball(300,100, 6);
@@ -8,6 +9,7 @@ function setup() {
 
 function draw() {
 	background(0);
+	//calling newobjects.methods();
 	ballA.display();
 	ballA.bounce();
 	ballB.display();
@@ -16,6 +18,8 @@ function draw() {
 	ballC.bounce();
 }
 
+//constructor for create object Ball with 3 parameters: x, y, speed
+//2 methods display() and bounce();
 function Ball(x, y, speed){
 	this.x = x;
 	this.y = y;
